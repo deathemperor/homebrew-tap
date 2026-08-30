@@ -7,7 +7,7 @@ cask "limitless" do
   desc "Every Claude account in one menu bar — swap before you stall"
   homepage "https://github.com/deathemperor/limitless"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
   conflicts_with cask: "limitless@nightly"
 
   app "Limitless.app"
