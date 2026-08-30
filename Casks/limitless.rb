@@ -1,6 +1,6 @@
 cask "limitless" do
   version "0.1.0"
-  sha256 "SHA_PLACEHOLDER"
+  sha256 "c3fabf2206f66f13ac1bb41ff48ba8ccc4992d73618c18f8fb8ce22d7faba5ce"
 
   url "https://github.com/deathemperor/limitless/releases/download/v#{version}/Limitless-#{version}.zip"
   name "Limitless"
