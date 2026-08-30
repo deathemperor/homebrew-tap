@@ -3,9 +3,9 @@
 Personal Homebrew tap.
 
 ```sh
-brew install --cask deathemperor/tap/limitless           # stable
-brew install --cask deathemperor/tap/limitless@nightly   # daily build of main
+brew install --cask deathemperor/tap/infinitus           # stable
+brew install --cask deathemperor/tap/infinitus@nightly   # daily build of main
 ```
 
-[Limitless](https://github.com/deathemperor/limitless) — every Claude
+[Infinitus](https://github.com/deathemperor/infinitus) — every Claude
 account in one menu bar.
