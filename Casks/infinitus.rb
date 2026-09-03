@@ -1,6 +1,6 @@
 cask "infinitus" do
-  version "0.3.0"
-  sha256 "8c2ee388c6b05d7e9dc6840d4c2a560d38e2f4cb37f7ccfa61631a299d3acea5"
+  version "0.4.0"
+  sha256 "0eb71f9f720abf7caed9df59f6661270ab6592b975d3294ab05f5749de43f7de"
 
   url "https://github.com/deathemperor/infinitus/releases/download/v#{version}/Infinitus-#{version}.zip"
   name "Infinitus"
@@ -11,6 +11,7 @@ cask "infinitus" do
   conflicts_with cask: "infinitus@nightly"
 
   app "Infinitus.app"
+  binary "#{appdir}/Infinitus.app/Contents/MacOS/infinitusctl"
 
   caveats <<~EOS
     Builds are ad-hoc signed, not notarized. If Gatekeeper refuses the
