@@ -14,11 +14,6 @@ cask "infinitus" do
   binary "#{appdir}/Infinitus.app/Contents/MacOS/infinitusctl"
 
   caveats <<~EOS
-    Builds are ad-hoc signed, not notarized. If Gatekeeper refuses the
-    first launch:
-      xattr -dr com.apple.quarantine "/Applications/Infinitus.app"
-    or install with --no-quarantine.
-
     The app drives the claude-swap engine:
       uv tool install claude-swap   (or pipx install claude-swap)
   EOS
