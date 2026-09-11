@@ -1,6 +1,6 @@
 cask "infinitus" do
-  version "0.4.4-alpha.2"
-  sha256 "0301e6d3dfd2434b260c56b85219f9fffeeb89131afe2a9b03b47b97692807bf"
+  version "0.4.5-alpha.1"
+  sha256 "c7cf0473dc580bc4394d8312012b24371c436c8ebf375cfc9e80c184c8bc1f4c"
 
   url "https://github.com/deathemperor/infinitus/releases/download/v#{version}/Infinitus-#{version}.zip"
   name "Infinitus"
@@ -12,9 +12,10 @@ cask "infinitus" do
 
   app "Infinitus.app"
   binary "#{appdir}/Infinitus.app/Contents/MacOS/infinitusctl"
+  binary "#{appdir}/Infinitus.app/Contents/MacOS/ictl"
 
   caveats <<~EOS
-    The app drives the claude-swap engine:
-      uv tool install claude-swap   (or pipx install claude-swap)
+    The app drives the swapd engine:
+      cargo install --git https://github.com/deathemperor/swapd swapd
   EOS
 end
