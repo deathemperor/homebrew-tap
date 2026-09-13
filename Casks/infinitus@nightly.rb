@@ -16,9 +16,7 @@ cask "infinitus@nightly" do
     Rolling build of main — `brew reinstall infinitus@nightly` to update
     (version :latest never auto-upgrades).
 
-    Builds are ad-hoc signed, not notarized. If Gatekeeper refuses the
-    first launch:
-      xattr -dr com.apple.quarantine "/Applications/Infinitus.app"
-    or install with --no-quarantine.
+    Builds are signed with a Developer ID and notarized by Apple, so they
+    launch without a Gatekeeper prompt.
   EOS
 end
