@@ -1,6 +1,6 @@
 cask "infinitus" do
-  version "0.5.0-alpha.11"
-  sha256 "64b2d0331486b69a62e5b12acdac0790be0e774825314bf642362b65d082f66d"
+  version "0.5.0-alpha.12"
+  sha256 "0d628e99627bac74ef890051be03084d878ab9e66645b8b4a30ef40928d316f8"
 
   url "https://github.com/deathemperor/infinitus/releases/download/v#{version}/Infinitus-#{version}.zip"
   name "Infinitus"
